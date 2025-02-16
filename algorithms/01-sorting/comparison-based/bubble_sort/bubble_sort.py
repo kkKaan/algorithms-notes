@@ -1,4 +1,4 @@
-from typing import List
+from typing import List  # For type hints, optional but recommended.
 
 
 def bubble_sort(arr: List[int]) -> List[int]:

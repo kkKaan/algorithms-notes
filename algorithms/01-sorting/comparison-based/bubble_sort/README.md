@@ -4,11 +4,12 @@
 
 Bubble Sort is a simple, comparison-based algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. 
 
-- Quadratic time complexity: `O(n^2)`
+- Time complexity: `O(n^2)`
 - Space complexity: `O(1)`
 - Stable: Yes
 - In-place: Yes
 - Best performance: `O(n)` (when the list is already sorted)
+- Worst performance: `O(n^2)` (when the list is sorted in reverse order)
 
 ## How It Works
 
@@ -35,3 +36,7 @@ procedure bubbleSort(A: array of items)
     end for
 end procedure
 ```
+
+## Example Implementations
+
+- [Python](./bubble_sort.py)
