@@ -1,18 +1,18 @@
-from typing import List  # For type hints, optional but recommended.
+from typing import Any  # For type hints, optional but recommended.
 
 
-def bubble_sort(arr: List[int]) -> List[int]:
+def bubble_sort(arr: list[Any]) -> list[Any]:
     """Sorts a list of integers in place using the bubble sort algorithm.
 
-    This implementation iterates through the list repeatedly, swapping adjacent
-    elements if they are in the wrong order. The algorithm terminates early if
-    no swaps occur during a complete pass through the list.
+    This implementation iterates (this is the iterative version) through the list 
+    repeatedly, swapping adjacent elements if they are in the wrong order. The algorithm
+    terminates early if no swaps occur during a complete pass through the list.
 
     Args:
-        arr (List[int]): A list of integers to be sorted.
+        arr (list[Any]): A list of integers to be sorted.
 
     Returns:
-        List[int]: The same list with its elements sorted in ascending order.
+        list[Any]: The same list with its elements sorted in ascending order.
 
     """
     n = len(arr)
@@ -31,6 +31,6 @@ def bubble_sort(arr: List[int]) -> List[int]:
 
 
 if __name__ == "__main__":
-    # To validate or test with other inputs, you may use here.
+    # To validate or test with some inputs, you may use here.
     arr = [64, 34, 25, 12, 22, 11, 90]
     print(bubble_sort(arr))  # Output: [11, 12, 22, 25, 34, 64, 90]
