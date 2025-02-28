@@ -45,5 +45,5 @@ This directory contains notes and code implementations for various sorting algor
 ## About This Directory
 
 Each algorithm folder contains:
-- **A README.md** with detailed notes: theory, pseudocode, complexity analysis, and example discussion.
-- **Implementation files** (in Python, for example) that demonstrate the algorithm in code.
+- **A README.md** with detailed notes: theory, pseudocode, and complexity analysis.
+- **Implementation files** that demonstrate the algorithm in code, in several programming languages.
