@@ -2,10 +2,10 @@
 
 ## Overview
 
-The problem seeks to find the contiguous subarray within a one-dimensional array of numbers that has the largest sum. There are several algorithms to solve this problem, but I am interested in the greedy one here. With naive approach, you can try every subarray, which is O(n^2). The greedy algorithm (Kadane's algorithm) is more efficient with O(n) time complexity.
+The problem seeks to find the contiguous subarray within a one-dimensional array of numbers that has the largest sum. There are several algorithms to solve this problem, but I am interested in the greedy one here. With naive approach, you can try every subarray, which is $O(n^2)$. The greedy algorithm (Kadane's algorithm) is more efficient with $O(n)$ time complexity.
 
-- Time complexity: O(n)
-- Space complexity: O(1)
+- Time complexity: $O(n)$
+- Space complexity: $O(1)$
 
 ## How It Works
 
