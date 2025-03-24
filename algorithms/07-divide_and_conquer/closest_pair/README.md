@@ -4,7 +4,7 @@
 
 Given a set of points in the plane, find the closest pair of points.
 
-- Time complexity: $O(n \log n)$
+- Time complexity: $O(n \log n \log n)$
 - Space complexity: $O(n)$
 
 ## How It Works

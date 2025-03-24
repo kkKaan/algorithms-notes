@@ -4,7 +4,7 @@ This directory contains notes and code implementations for various divide and co
 
 ## Table of Contents
 
-- 
+- [Closest Pair of Points](./closest_pair/README.md)
 
 ## About This Directory
 
