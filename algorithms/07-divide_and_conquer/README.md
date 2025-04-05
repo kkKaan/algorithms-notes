@@ -7,6 +7,7 @@ This directory contains notes and code implementations for various divide and co
 - [Closest Pair of Points](./closest_pair/README.md)
 - [Inversion Count](./inversion_count/README.md)
 - [K Closest Pairs](./k_closest_pair/README.md)
+- [Karatsuba's Algorithm](./karatsuba/README.md)
 - [Skyline Problem](./skyline_problem/README.md)
 
 ## About This Directory
