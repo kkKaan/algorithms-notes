@@ -58,6 +58,7 @@ int knapsack_dp(vector<int>& weights, vector<int>& values, int wLimit, int currI
             dp[i][j] = max(t1, t2);
         }
     }
+
     return dp[n - 1][m - 1];
 }
 
@@ -73,13 +74,14 @@ int unbounded_ks_dp(vector<int>& weights, vector<int>& values, int wLimit, int c
         for (int j = 0; j <= wLimit; ++j)
         {
             t1 = dp[i - 1][j];
-
+            t2 = 0;
             if (j - weights[i - 1] >= 0)
                 t2 = dp[i - 1][j - weights[i - 1]] + values[i - 1];
 
             dp[i][j] = max(t1, t2);
         }
     }
+
     return dp[n - 1][m - 1];
 }
 
