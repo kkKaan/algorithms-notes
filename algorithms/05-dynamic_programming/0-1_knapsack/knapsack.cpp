@@ -62,27 +62,23 @@ int knapsack_dp(vector<int>& weights, vector<int>& values, int wLimit, int currI
     return dp[n - 1][m - 1];
 }
 
-int unbounded_ks_dp(vector<int>& weights, vector<int>& values, int wLimit, int currIndex)
+int unbounded_ks_dp(vector<int>& weights, vector<int>& values, int wLimit)
 {
-    int n = weights.size() + 1;
-    int m = wLimit + 1;
-    vector<vector<int>> dp(n, vector<int>(m, 0));
-    int t1 = 0, t2 = 0;
+    int n = weights.size();
+    vector<int> dp(wLimit + 1, 0);
 
-    for (int i = 1; i < n; ++i)
+    for (int w = 1; w <= wLimit; w++)
     {
-        for (int j = 0; j <= wLimit; ++j)
+        for (int i = 0; i < n; i++)
         {
-            t1 = dp[i - 1][j];
-            t2 = 0;
-            if (j - weights[i - 1] >= 0)
-                t2 = dp[i - 1][j - weights[i - 1]] + values[i - 1];
-
-            dp[i][j] = max(t1, t2);
+            if (weights[i] <= w)
+            {
+                dp[w] = max(dp[w], dp[w - weights[i]] + values[i]);
+            }
         }
     }
 
-    return dp[n - 1][m - 1];
+    return dp[wLimit];
 }
 
 int main()
@@ -99,6 +95,6 @@ int main()
 
     cout << "Max value with tabulation: " << knapsack_dp(weights, values, capacity, 2) << endl;
 
-    cout << "Max value with tabulation (unbounded knapsack): " << unbounded_ks_dp(weights, values, capacity, 2) << endl;
+    cout << "Max value with tabulation (unbounded knapsack): " << unbounded_ks_dp(weights, values, capacity) << endl;
     return 0;
 }
