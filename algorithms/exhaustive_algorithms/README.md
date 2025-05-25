@@ -4,6 +4,7 @@ This directory contains notes and code implementations for various exhaustive se
 
 ## Table of Contents
 
+- [Permutation Generation](permutations/README.md)
 - [Subset Generation](subset_generation/README.md)
 
 ## About This Directory
